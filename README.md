@@ -54,3 +54,29 @@ This framework provides a simple approach to automate mobile native apps using A
 - Incorporate comments wherever necessary for clarity.
 - Utilize descriptive variable, method, and class names.
 - Apply design patterns where applicable.
+
+# Steps to run the tests in your LOCAL machine.
+
+- Tools:
+  - Appium Server: 2.0.1
+  - Java: openjdk 18.0.1
+  - Apache Maven: 3.8.5
+  - Node: 21.7.2
+  - npm: 10.5.0
+  - Android Studio: Latest
+- Open Terminal and set the below Global Variables:
+  - export ANDROID_HOME=/Users/{userName}/Library/Android/sdk
+  - export PATH=${PATH}:/$ANDROID_HOME/platform-tools:/$ANDROID_HOME/tools:/$ANDROID_HOME/tools/bin
+  - export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
+  - export PATH=${PATH}:$JAVA_HOME/bin:$JAVA_HOME/Home/bin
+  - export NODE_HOME=/opt/homebrew/bin/node
+  - export APPIUM_HOME=/Users/{userName}/node_modules/appium/lib
+  - export PATH=$PATH:/usr/local/bin
+- Open the terminal, navigate to the intended folder and Clone this repo into your local.
+- Navigate to the above directory.
+- Install the latest Appium server and start it (IP: 127.0.0.1 and PORT: 4723)
+- make sure the Appium server is running.
+- Start Android studio and create an emulator.
+- Run adb devices cmd in terminal window. Provide your emulator name in `src/main/java/base/BaseTest.java` within the `setup()` method under `String emulatorName`.
+- Basic command to run tests: Open terminal, navigate to the project directory, and run the command: `mvn clean install`.
+- After the test build, generate the Allure report by running the following command in the terminal: `allure serve allure-results`. This command will generate the Allure report and launch it in the system's default browser.
