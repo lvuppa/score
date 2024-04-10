@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-10T17:48:30Z" name="The Score Test Suites" finished-at="2024-04-10T17:49:04Z" duration-ms="33637">
+    <groups>
+      <group name="SMOKE">
+        <method signature="OnBoardingAndPlayerSearch.appOnBoardingFlow(java.lang.String)[pri:0, instance:apptests.OnBoardingAndPlayerSearch@6d5037a9]" name="appOnBoardingFlow" class="apptests.OnBoardingAndPlayerSearch"/>
+      </group> <!-- SMOKE -->
+    </groups>
+    <test started-at="2024-04-10T17:48:30Z" name="Tests" finished-at="2024-04-10T17:49:04Z" duration-ms="33637">
+      <class name="apptests.OnBoardingAndPlayerSearch">
+        <test-method is-config="true" signature="setUpApp()[pri:0, instance:apptests.OnBoardingAndPlayerSearch@6d5037a9]" started-at="2024-04-10T17:48:31Z" name="setUpApp" finished-at="2024-04-10T17:48:38Z" duration-ms="7664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpApp -->
+        <test-method signature="appOnBoardingFlow(java.lang.String)[pri:0, instance:apptests.OnBoardingAndPlayerSearch@6d5037a9]" started-at="2024-04-10T17:48:38Z" name="appOnBoardingFlow" data-provider="playerNames" finished-at="2024-04-10T17:49:03Z" duration-ms="24868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lionel Messi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appOnBoardingFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:apptests.OnBoardingAndPlayerSearch@6d5037a9]" started-at="2024-04-10T17:49:03Z" name="tearDown" finished-at="2024-04-10T17:49:04Z" duration-ms="716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- apptests.OnBoardingAndPlayerSearch -->
+    </test> <!-- Tests -->
+  </suite> <!-- The Score Test Suites -->
+</testng-results>
